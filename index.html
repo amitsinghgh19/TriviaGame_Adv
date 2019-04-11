@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advance Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Link to the Bootstrap library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header>
+
+        <!-- Start Nav -->
+        <nav class="navbar-center navbar-expand-lg navbar-dark .bg-transparent text-center" style="opacity: 0.8;" >
+                <h1 class="navbar-text py-2 font-weight-bold my-3" style="height: 40%; width: 50%; background-color: crimson; color:  rgb(181, 192, 20);">
+                        <img src="assets/images/hp6.gif" alt="hp.logo" style="height: 40%; width: 50%;">
+                        Trivia Challenge
+                </h1>    
+        </nav>
+        <!-- End Nav -->
+    </header>
+
+    <!-- Start jumbotron -->
+    <div class="jumbotron vertical-center jumbotron-fluid" id="welcomeContainer" style="height: 40%; width: 50%; background:transparent !important;font-size: 125%; ">
+        <div class="container text-center text-body">
+        <h1>Welcome to the hogwarts-themed trivia!</h1>
+        <p><em>In this challenge, you will get 10 questions one by one. You get 15 seconds to answer each of the questions. If you dont answer the question within 15 seconds, the app will time you out and will move to the next question untill all the 10 questions are displayed. The app will give you your result on the final screen. You can restart the game without reloading the page.</em></p>
+        <p><em>Good Luck!</em></p>
+        <p><a class="btn btn-primary btn-lg" role="button" id="startBtn">START GAME</a></p>
+        <img src="assets/images/200w.webp" alt="hp-gif" title="hp-gif" />
+        </div>
+    </div>
+    <!-- End jumbotron -->
+     
+    
+    <div class="row justify-content-center ">
+    <div class="col-lg-4 text-warning mx-25 my-4" id="timerDiv">
+        <h3 id="clock-timer">Time Remaining: <span id="timeRemaning">15 Seconds</span> </h3>
+    </div>
+    </div>
+
+    <br>
+    <br>
+<!-- **************************************************************************************************************************************************  -->
+<!-- Start Game Q&A -->
+<!-- Start Q1 jumbotron -->
+        <div class="jumbotron vertical-center jumbotron-fluid" id="qus1" style="height: 40%; width: 50%; background:transparent !important;font-size: 125%; ">
+        <div class="container card-center text-body">
+                <div id="qus1Div">
+                <p class="text-justify"><strong>1. Slughorn teaches his students that Amortentia smells different to each person. What food does Harry smell?</strong></p>
+                <!--Correct Ans=> Treacle tart -->
+                        <ul>
+                                <li><input type="radio" name="q1" value=" Pumpkin juice"> Pumpkin juice</li>
+                                <li><input type="radio" name="q1" value="Mrs Weasley's fudge"> Mrs Weasley's fudge</li>
+                                <li><input type="radio" name="q1" value="Lemon drops"> Lemon drops</li>
+                                <li><input type="radio" name="q1" value="Treacle tart"> Treacle tart</li>
+                        </ul>
+                </div>
+                <div class="card" id="Q1Card1" style="width: 18rem; left:30%;">
+                        <img src="assets/images/hpq1ra.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">CONGRATULATIONS!</h5>
+                        <p class="card-text">Your answer was correct!</p>
+                        </div>
+                </div>
+
+                <div class="card" id="Q1Card2" style="width: 18rem; left:30%;">
+                        <img src="assets/images/hpq1wa.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Nope: The Correct answer was:</h5>
+                        <p class="card-text">Treacle tart</p>
+                        </div>
+                </div>
+
+                <div class="card" id="Q1Card3" style="width: 18rem; left:30%;">
+                        <img src="assets/images/hpq1to.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Time Out! The Correct answer was:</h5>
+                        <p class="card-text">Treacle tart</p>
+                        </div>
+                </div>
+        </div>
+</div>
+<!-- End Q1 jumbotron -->
+<!-- **************************************************************************************************************************************************  -->
+<!-- Start Q2 jumbotron -->
+<div class="jumbotron vertical-center jumbotron-fluid" id="qus2" style="height: 40%; width: 50%; background:transparent !important;font-size: 125%; ">
+        <div class="container card-center text-body">
+                <div id="qus2Div">
+                        <p class="text-justify"><strong>2. Which Hogwarts professor was rumoured to be a duelling champion in their youth?</strong></p>
+                        <!--Correct Ans=> Filius Flitwick -->
+                        <ul>
+                                <li><input type="radio" name="q2" value="Minerva McGonagall"> Minerva McGonagall</li>
+                                <li><input type="radio" name="q2" value="Severus Snape"> Severus Snape</li>
+                                <li><input type="radio" name="q2" value="Filius Flitwick"> Filius Flitwick</li>
+                                <li><input type="radio" name="q2" value="Horace Slughorn"> Horace Slughorn</li>
+                        </ul>
+                </div>
+                <div class="card" id="Q2Card1" style="width: 18rem; left:30%;">
+                        <img src="assets/images/hpq2ra.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">CONGRATULATIONS!</h5>
+                        <p class="card-text">Your answer was correct!</p>
+                        </div>
+                </div>
+
+                <div class="card" id="Q2Card2" style="width: 18rem; left:30%;">
+                        <img src="assets/images/hpq2wa.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Nope: The Correct answer was:</h5>
+                        <p class="card-text">Filius Flitwick</p>
+                        </div>
+                </div>
+
+                <div class="card" id="Q2Card3"style="width: 18rem; left:30%;">
+                        <img src="assets/images/hpq2to.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Time Out! The Correct answer was:</h5>
+                        <p class="card-text">Filius Flitwick</p>
+                        </div>
+                </div>
+                
+        </div>
+</div>
+<!-- End Q2 jumbotron -->
+<!-- **************************************************************************************************************************************************  -->
+<!-- Start Q3 jumbotron -->
+<div class="jumbotron vertical-center jumbotron-fluid" id="qus3" style="height: 40%; width: 50%; background:transparent !important;font-size: 125%; ">
+                <div class="container card-center text-body">
+                        <div id="qus3Div">
+                                <p class="text-justify"><strong>3. Where is the Slytherin common room located?</strong></p>
+                                <!--Correct Ans=> The dungeons -->
+                                <ul>
+                                        <li><input type="radio" name="q3" value="Next to the kitchens"> Next to the kitchens</li>
+                                        <li><input type="radio" name="q3" value="In the West Tower"> In the West Tower</li>
+                                        <li><input type="radio" name="q3" value="The dungeons"> The dungeons</li>
+                                        <li><input type="radio" name="q3" value="Below the Great Hall"> Below the Great Hall</li>
+                                </ul>
+                        </div>
+                        <div class="card" id="Q3Card1" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2ra.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">CONGRATULATIONS!</h5>
+                                <p class="card-text">Your answer was correct!</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q3Card2" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2wa.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Nope: The Correct answer was:</h5>
+                                <p class="card-text">The dungeons</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q3Card3"style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2to.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Time Out! The Correct answer was:</h5>
+                                <p class="card-text">The dungeons</p>
+                                </div>
+                        </div>
+                
+                </div>
+</div>
+<!-- End Q3 jumbotron -->
+<!-- **************************************************************************************************************************************************  -->
+<!-- Start Q4 jumbotron -->
+<div class="jumbotron vertical-center jumbotron-fluid" id="qus4" style="height: 40%; width: 50%; background:transparent !important;font-size: 125%; ">
+                <div class="container card-center text-body">
+                        <div id="qus4Div">
+                                <p class="text-justify"><strong>4. What is the name of the book Hermione supposes Voldemort used to learn about Horcruxes?</strong></p>
+                                <!--Correct Ans=> Secrets of the Darkest Art -->
+                                <ul>
+                                        <li><input type="radio" name="q4" value="Magik Moste Evil"> Magik Moste Evil</li>
+                                        <li><input type="radio" name="q4" value="Secrets of the Darkest Art"> Secrets of the Darkest Art</li>
+                                        <li><input type="radio" name="q4" value="A Guide to Medieval Sorcery"> A Guide to Medieval Sorcery</li>
+                                        <li><input type="radio" name="q4" value="Moste Potente Potions"> Moste Potente Potions</li>
+                                </ul>
+                        </div>
+                        <div class="card" id="Q4Card1" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2ra.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">CONGRATULATIONS!</h5>
+                                <p class="card-text">Your answer was correct!</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q4Card2" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2wa.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Nope: The Correct answer was:</h5>
+                                <p class="card-text">Secrets of the Darkest Art</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q4Card3"style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2to.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Time Out! The Correct answer was:</h5>
+                                <p class="card-text">Secrets of the Darkest Art</p>
+                                </div>
+                        </div>
+                
+                </div>
+</div>
+<!-- End Q4 jumbotron -->
+<!-- **************************************************************************************************************************************************  -->
+<!-- Start Q5 jumbotron -->
+<div class="jumbotron vertical-center jumbotron-fluid" id="qus5" style="height: 40%; width: 50%; background:transparent !important;font-size: 125%; ">
+                <div class="container card-center text-body">
+                        <div id="qus5Div">
+                                <p class="text-justify"><strong>5. Who is the Hufflepuff house ghost?</strong></p>
+                                <!--Correct Ans=> The Fat Friar -->
+                                <ul>
+                                        <li><input type="radio" name="q5" value="Cuthbert Binns"> Cuthbert Binns</li>
+                                        <li><input type="radio" name="q5" value="Sir Patrick Delaney-Podmore"> Sir Patrick Delaney-Podmore</li>
+                                        <li><input type="radio" name="q5" value="The Fat Friar"> The Fat Friar</li>
+                                        <li><input type="radio" name="q5" value="The Grey Lady"> The Grey Lady</li>
+                                </ul>
+                        </div>
+                        <div class="card" id="Q5Card1" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2ra.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">CONGRATULATIONS!</h5>
+                                <p class="card-text">Your answer was correct!</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q5Card2" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2wa.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Nope: The Correct answer was:</h5>
+                                <p class="card-text">The Fat Friar</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q5Card3"style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2to.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Time Out! The Correct answer was:</h5>
+                                <p class="card-text">The Fat Friar</p>
+                                </div>
+                        </div>
+                
+                </div>
+</div>
+<!-- End Q5 jumbotron -->
+<!-- **************************************************************************************************************************************************  -->
+<!-- Start Q6 jumbotron -->
+<div class="jumbotron vertical-center jumbotron-fluid" id="qus6" style="height: 40%; width: 50%; background:transparent !important;font-size: 125%; ">
+                <div class="container card-center text-body">
+                        <div id="qus6Div">
+                                <p class="text-justify"><strong>6. Which creatures pull the carriages that take students from the Hogwarts Express to the Castle?</strong></p>
+                                <!--Correct Ans=> Thestrals -->
+                                <ul>
+                                        <li><input type="radio" name="q6" value="Hippogriffs"> Hippogriffs</li>
+                                        <li><input type="radio" name="q6" value="Thestrals"> Thestrals</li>
+                                        <li><input type="radio" name="q6" value="Centaurs"> Centaurs</li>
+                                        <li><input type="radio" name="q6" value="Manticores"> Manticores</li>
+                                </ul>
+                        </div>
+                        <div class="card" id="Q6Card1" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2ra.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">CONGRATULATIONS!</h5>
+                                <p class="card-text">Your answer was correct!</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q6Card2" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2wa.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Nope: The Correct answer was:</h5>
+                                <p class="card-text">Thestrals</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q6Card3"style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2to.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Time Out! The Correct answer was:</h5>
+                                <p class="card-text">Thestrals</p>
+                                </div>
+                        </div>
+                
+                </div>
+</div>
+<!-- End Q6 jumbotron -->
+<!-- **************************************************************************************************************************************************  -->
+<!-- Start Q7 jumbotron -->
+<div class="jumbotron vertical-center jumbotron-fluid" id="qus7" style="height: 40%; width: 50%; background:transparent !important;font-size: 125%; ">
+                <div class="container card-center text-body">
+                        <div id="qus7Div">
+                                <p class="text-justify"><strong>7. What is the name of the room Harry uses to teach Dumbledore's Army?</strong></p>
+                                <!--Correct Ans=> The Room of Requirement -->
+                                <ul>
+                                        <li><input type="radio" name="q7" value="The Restricted Section of the Library"> The Restricted Section of the Library</li>
+                                        <li><input type="radio" name="q7" value="The girls bathroom on the first floor"> The girls bathroom on the first floor</li>
+                                        <li><input type="radio" name="q7" value="The Prefect's Bathroom"> The Prefect's Bathroom</li>
+                                        <li><input type="radio" name="q7" value="The Room of Requirement"> The Room of Requirement</li>
+                                </ul>
+                        </div>
+                        <div class="card" id="Q7Card1" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2ra.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">CONGRATULATIONS!</h5>
+                                <p class="card-text">Your answer was correct!</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q7Card2" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2wa.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Nope: The Correct answer was:</h5>
+                                <p class="card-text">The Room of Requirement</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q7Card3"style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2to.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Time Out! The Correct answer was:</h5>
+                                <p class="card-text">The Room of Requirement</p>
+                                </div>
+                        </div>
+                
+                </div>
+</div>
+<!-- End Q7 jumbotron -->
+<!-- **************************************************************************************************************************************************  -->
+<!-- Start Q8 jumbotron -->
+<div class="jumbotron vertical-center jumbotron-fluid" id="qus8" style="height: 40%; width: 50%; background:transparent !important;font-size: 125%; ">
+                <div class="container card-center text-body">
+                        <div id="qus8Div">
+                                <p class="text-justify"><strong>8. Who was the headmaster of Hogwarts when the Chamber of Secrets was opened for the first time?</strong></p>
+                                <!--Correct Ans=> Armando Dippet -->
+                                <ul>
+                                        <li><input type="radio" name="q8" value="Armando Dippet"> Armando Dippet</li>
+                                        <li><input type="radio" name="q8" value="Albus Dumbledore"> Albus Dumbledore</li>
+                                        <li><input type="radio" name="q8" value="Phineas Nigellus Black"> Phineas Nigellus Black</li>
+                                        <li><input type="radio" name="q8" value="The Room of Requirement"> Brutus Scrimgeour</li>
+                                </ul>
+                        </div>
+                        <div class="card" id="Q8Card1" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2ra.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">CONGRATULATIONS!</h5>
+                                <p class="card-text">Your answer was correct!</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q8Card2" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2wa.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Nope: The Correct answer was:</h5>
+                                <p class="card-text">Armando Dippet</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q8Card3"style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2to.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Time Out! The Correct answer was:</h5>
+                                <p class="card-text">Armando Dippet</p>
+                                </div>
+                        </div>
+                
+                </div>
+</div>
+<!-- End Q8 jumbotron -->
+<!-- **************************************************************************************************************************************************  -->
+<!-- Start Q9 jumbotron -->
+<div class="jumbotron vertical-center jumbotron-fluid" id="qus9" style="height: 40%; width: 50%; background:transparent !important;font-size: 125%; ">
+                <div class="container card-center text-body">
+                        <div id="qus9Div">
+                                <p class="text-justify"><strong>9. How many staircases does Hogwarts have?</strong></p>
+                                <!--Correct Ans=> 142 -->
+                                <ul>
+                                        <li><input type="radio" name="q9" value="142"> 142</li>
+                                        <li><input type="radio" name="q9" value="143"> 143</li>
+                                        <li><input type="radio" name="q8" value="163"> 163</li>
+                                        <li><input type="radio" name="q9" value="152"> 152</li>
+                                </ul>
+                        </div>
+                        <div class="card" id="Q9Card1" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2ra.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">CONGRATULATIONS!</h5>
+                                <p class="card-text">Your answer was correct!</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q9Card2" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2wa.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Nope: The Correct answer was:</h5>
+                                <p class="card-text">142</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q9Card3"style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2to.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Time Out! The Correct answer was:</h5>
+                                <p class="card-text">142</p>
+                                </div>
+                        </div>
+                
+                </div>
+</div>
+<!-- End Q9 jumbotron -->
+<!-- **************************************************************************************************************************************************  -->
+<!-- Start Q10 jumbotron -->
+<div class="jumbotron vertical-center jumbotron-fluid" id="qus10" style="height: 40%; width: 50%; background:transparent !important;font-size: 125%; ">
+                <div class="container card-center text-body">
+                        <div id="qus10Div">
+                                <p class="text-justify"><strong>10. In order they taught, who were the six Defence Against the Dark Arts professors who taught Harry at Hogwarts?</strong></p>
+                                <!--Correct Ans=> Quirrell, Lockhart, Lupin, Moody, Umbridge, Snape -->
+                                <ul>
+                                        <li><input type="radio" name="q10" value="Quirrell, Lockhart, Lupin, Moody, Umbridge, Snape">Quirrell, Lockhart, Lupin, Moody, Umbridge, Snape</li>
+                                        <li><input type="radio" name="q10" value="Quirrell, Lockhart, Lupin, Moody, Umbridge, Slughorn">Quirrell, Lockhart, Lupin, Moody, Umbridge, Slughorn</li>
+                                        <li><input type="radio" name="q10" value="Quirrell, Lockhart, Lupin, Umbridge, Moody, Snape">Quirrell, Lockhart, Lupin, Umbridge, Moody, Snape</li>
+                                        <li><input type="radio" name="q10" value="Quirrell, Lockhart, Lupin, Moody, Snape, Carrow">Quirrell, Lockhart, Lupin, Moody, Snape, Carrow</li>
+                                </ul>
+                        </div>
+                        <div class="card" id="Q10Card1" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2ra.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">CONGRATULATIONS!</h5>
+                                <p class="card-text">Your answer was correct!</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q10Card2" style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2wa.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Nope: The Correct answer was:</h5>
+                                <p class="card-text">Quirrell, Lockhart, Lupin, Moody, Umbridge, Snape</p>
+                                </div>
+                        </div>
+        
+                        <div class="card" id="Q10Card3"style="width: 18rem; left:30%;">
+                                <img src="assets/images/hpq2to.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Time Out! The Correct answer was:</h5>
+                                <p class="card-text">Quirrell, Lockhart, Lupin, Moody, Umbridge, Snape</p>
+                                </div>
+                        </div>
+                
+                </div>
+</div>
+<!-- End 10 jumbotron -->
+<!-- **************************************************************************************************************************************************  -->
+
+<!-- End Game Q&A -->
+     <!-- Start Score Board jumbotron -->
+     <div class="jumbotron vertical-center jumbotron-fluid" style="height: 60%; width: 50%; background:transparent !important; " id="resultContainer">
+            <div class="container text-center">
+                <h1>Score Board!</h1>
+                <br>
+                <br>
+                <h1>Correct Answers: <span id = "correct-ans">0</span></h1>
+                <h1>Incorrect Answers: <span id = incorrect-ans>0</span></h1>
+                <h1>Unanswered: <span id = "un-ans">0</span></h1>
+                <br>
+                <p><a class="btn btn-primary btn-lg" role="button" id="startOverBtn">Start Over?</a></p>
+                <img src="assets/images/giphy.webp" alt="hp-gif" title="hp-gif" />
+            </div>
+    </div>
+    <!-- End Score Board jumbotron -->
+
+    <!-- <div class="row" id="footerSmPic">
+            <div class="footer fixed-bottom navbar-expand-lg navbar-light text-white text-right  "style="background:transparent;">
+                    <img src="assets/images/tt6.png" alt="" id="footeImg">
+            </div>
+    </div> -->
+
+    <!-- <footer>
+        <img src="assets/images/tt6.png" alt="">
+    </footer> -->
+<!-- Link in jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Link in JavaScript -->
+<script src="./assets/javascript/app.js"></script>
+</body>
+</html>
