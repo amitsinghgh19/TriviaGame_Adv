@@ -168,6 +168,7 @@ function getResult(){
                 //$("#qus1, #qus2, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
                 $("#Q2Card3").hide();
                 $("#Q3Card1,#Q3Card2,#Q3Card3,#resultContainer").hide();
+                $("#qus2").hide();
                 timeRemaning= 15;
                 $('#timeRemaning').html(timeRemaning + " Seconds");
                 startCountdown();
@@ -185,6 +186,7 @@ function getResult(){
                 //$("#qus1, #qus2, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
                 $("#Q2Card1").hide();
                 $("#Q3Card1,#Q3Card2,#Q3Card3,#resultContainer").hide();
+                $("#qus2").hide();
                 timeRemaning= 15;
                 $('#timeRemaning').html(timeRemaning + " Seconds");
                 startCountdown();
@@ -202,6 +204,7 @@ function getResult(){
                 //$("#qus1, #qus2, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
                 $("#Q2Card2").hide();
                 $("#Q3Card1,#Q3Card2,#Q3Card3,#resultContainer").hide();
+                $("#qus2").hide();
                 timeRemaning= 15;
                 $('#timeRemaning').html(timeRemaning + " Seconds");
                 startCountdown();
@@ -227,6 +230,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q3Card3").hide();
             $("#Q4Card1,#Q4Card2,#Q4Card3,#resultContainer").hide();
+            $("#qus3").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -244,6 +248,7 @@ function getResult(){
            // $("#qus1, #qus2, #qus3, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q3Card1").hide();
             $("#Q4Card1,#Q4Card2,#Q4Card3,#resultContainer").hide();
+            $("#qus3").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -261,6 +266,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q3Card2").hide();
             $("#Q4Card1,#Q4Card2,#Q4Card3,#resultContainer").hide();
+            $("#qus3").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -286,6 +292,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q4Card3").hide();
             $("#Q5Card1,#Q5Card2,#Q5Card3,#resultContainer").hide();
+            $("#qus4").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -303,6 +310,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q4Card1").hide();
             $("#Q5Card1,#Q5Card2,#Q5Card3,#resultContainer").hide();
+            $("#qus4").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -320,6 +328,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q4Card2").hide();
             $("#Q5Card1,#Q5Card2,#Q5Card3,#resultContainer").hide();
+            $("#qus4").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -346,6 +355,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q5Card3").hide();
             $("#Q6Card1,#Q6Card2,#Q6Card3,#resultContainer").hide();
+            $("#qus5").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -363,6 +373,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q5Card1").hide();
             $("#Q6Card1,#Q6Card2,#Q6Card3,#resultContainer").hide();
+            $("#qus5").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -380,6 +391,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q5Card2").hide();
             $("#Q6Card1,#Q6Card2,#Q6Card3,#resultContainer").hide();
+            $("#qus5").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -407,6 +419,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus8, #qus9, #qus10").hide();
             $("#Q6Card3").hide();
             $("#Q7Card1,#Q7Card2,#Q7Card3,#resultContainer").hide();
+            $("#qus6").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -424,6 +437,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus8, #qus9, #qus10").hide();
             $("#Q6Card1").hide();
             $("#Q7Card1,#Q7Card2,#Q7Card3,#resultContainer").hide();
+            $("#qus6").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -441,6 +455,7 @@ function getResult(){
            // $("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus8, #qus9, #qus10").hide();
             $("#Q6Card2").hide();
             $("#Q7Card1,#Q7Card2,#Q7Card3,#resultContainer").hide();
+            $("#qus6").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -469,6 +484,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus9, #qus10").hide();
             $("#Q7Card3").hide();
             $("#Q8Card1,#Q8Card2,#Q8Card3,#resultContainer").hide();
+            $("#qus7").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -486,6 +502,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus9, #qus10").hide();
             $("#Q7Card1").hide();
             $("#Q8Card1,#Q8Card2,#Q8Card3,#resultContainer").hide();
+            $("#qus7").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -503,6 +520,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus9, #qus10").hide();
             $("#Q7Card2").hide();
             $("#Q8Card1,#Q8Card2,#Q8Card3,#resultContainer").hide();
+            $("#qus7").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -529,6 +547,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus10").hide();
             $("#Q8Card3").hide();
             $("#Q9Card1,#Q9Card2,#Q9Card3,#resultContainer").hide();
+            $("#qus8").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -546,6 +565,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus10").hide();
             $("#Q8Card1").hide();
             $("#Q9Card1,#Q9Card2,#Q9Card3,#resultContainer").hide();
+            $("#qus8").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -563,6 +583,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus10").hide();
             $("#Q8Card2").hide();
             $("#Q9Card1,#Q9Card2,#Q9Card3,#resultContainer").hide();
+            $("#qus8").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -590,6 +611,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9").hide();
             $("#Q9Card3").hide();
             $("#Q10Card1,#Q10Card2,#Q10Card3,#resultContainer").hide();
+            $("#qus9").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -607,6 +629,7 @@ function getResult(){
             //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9").hide();
             $("#Q9Card1").hide();
             $("#Q10Card1,#Q10Card2,#Q10Card3,#resultContainer").hide();
+            $("#qus9").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -624,6 +647,7 @@ function getResult(){
            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9").hide();
             $("#Q9Card2").hide();
             $("#Q10Card1,#Q10Card2,#Q10Card3,#resultContainer").hide();
+            $("#qus9").hide();
             timeRemaning= 15;
             $('#timeRemaning').html(timeRemaning + " Seconds");
             startCountdown();
@@ -649,6 +673,7 @@ function getResult(){
             $("#resultContainer").show();
             $("#Q10Card3").hide();
             //$("#Q10Card1,#Q10Card2,#Q10Card3").hide();
+            $("#qus10").hide();
             stopCountdown();
             // timeRemaning= 15;
             // $('#timeRemaning').html(timeRemaning + " Seconds");
@@ -667,6 +692,7 @@ function getResult(){
             $("#resultContainer").show();
             $("#Q10Card1").hide();
             //$("#Q10Card1,#Q10Card2,#Q10Card3").hide();
+            $("#qus10").hide();
             stopCountdown();
             // timeRemaning= 15;
             // $('#timeRemaning').html(timeRemaning + " Seconds");
@@ -685,6 +711,7 @@ function getResult(){
             $("#resultContainer").show();
             $("#Q10Card2").hide();
             //$("#Q10Card1,#Q10Card2,#Q10Card3").hide();
+            $("#qus10").hide();
             stopCountdown();
             // timeRemaning= 15;
             // $('#timeRemaning').html(timeRemaning + " Seconds");
@@ -807,37 +834,36 @@ function getResult(){
 //Hide result after selecting start Over Button and reset the variables value
 $("#startOverBtn").click(function(){
     //location.reload();
-    window.location.reload(false);
 
-    //  // Remove the value saved previously by Checked values of Radio Buttons
-    //  $('input[name="q1"]').prop('checked', false);
-    //  $('input[name="q2"]').prop('checked', false);
-    //  $('input[name="q3"]').prop('checked', false);
-    //  $('input[name="q4"]').prop('checked', false);
-    //  $('input[name="q5"]').prop('checked', false);
-    //  $('input[name="q6"]').prop('checked', false);
-    //  $('input[name="q7"]').prop('checked', false);
-    //  $('input[name="q8"]').prop('checked', false);
-    //  $('input[name="q9"]').prop('checked', false);
-    //  $('input[name="q10"]').prop('checked', false);
+     // Remove the value saved previously by Checked values of Radio Buttons
+     $('input[name="q1"]').prop('checked', false);
+     $('input[name="q2"]').prop('checked', false);
+     $('input[name="q3"]').prop('checked', false);
+     $('input[name="q4"]').prop('checked', false);
+     $('input[name="q5"]').prop('checked', false);
+     $('input[name="q6"]').prop('checked', false);
+     $('input[name="q7"]').prop('checked', false);
+     $('input[name="q8"]').prop('checked', false);
+     $('input[name="q9"]').prop('checked', false);
+     $('input[name="q10"]').prop('checked', false);
 
 
-    // timeRemaning= 15;
-    // correctAns=0;
-    // incorrectAns=0;
-    // unAns=0;
-    // qusNo=1;
-    // refreshIntervalId= null;
-    // $("#resultContainer").hide();
-    // //$("#welcomeContainer").hide();
-    // //$("#qus1").show();
-    // $('#qus1Div').css('visibility','visible'); 
-    // $("#qus1Div, #qus2Div").show();
+    timeRemaning= 15;
+    correctAns=0;
+    incorrectAns=0;
+    unAns=0;
+    qusNo=1;
+    refreshIntervalId= null;
+    $("#resultContainer").hide();
+    //$("#welcomeContainer").hide();
+    //$("#qus1").show();
+    $("#qus1").css("display", "block");
+    $("#qus1Div, #qus2Div , #qus3Div , #qus4Div , #qus5Div , #qus6Div , #qus7Div , #qus8Div , #qus9Div , #qus10Div" ).show();
 
-    // //$("#Q1Card1, #Q1Card2, #Q1Card3, #Q2Card1, #Q2Card2, #Q2Card3, #Q3Card1, #Q3Card2, #Q3Card3, #Q4Card1, #Q4Card2, #Q4Card3, #Q5Card1, #Q5Card2, #Q5Card3, #Q6Card1, #Q6Card2, #Q6Card3, #Q7Card1, #Q7Card2, #Q7Card3, #Q8Card1, #Q8Card2, #Q8Card3, #Q9Card1, #Q9Card2, #Q9Card3, #Q10Card1, #Q10Card2, #Q10Card3").hide();
-    // // $("#submitBtn").show();
-    // $("#timerDiv").show();
-    // startCountdown();
+    //$("#Q1Card1, #Q1Card2, #Q1Card3, #Q2Card1, #Q2Card2, #Q2Card3, #Q3Card1, #Q3Card2, #Q3Card3, #Q4Card1, #Q4Card2, #Q4Card3, #Q5Card1, #Q5Card2, #Q5Card3, #Q6Card1, #Q6Card2, #Q6Card3, #Q7Card1, #Q7Card2, #Q7Card3, #Q8Card1, #Q8Card2, #Q8Card3, #Q9Card1, #Q9Card2, #Q9Card3, #Q10Card1, #Q10Card2, #Q10Card3").hide();
+    // $("#submitBtn").show();
+    $("#timerDiv").show();
+    startCountdown();
 });
 
 
