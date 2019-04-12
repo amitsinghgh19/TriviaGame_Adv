@@ -14,7 +14,6 @@ $(document).ready(function() {
     $("#welcomeContainer").hide();
     $("#qus1").show();
     $("#Q1Card1, #Q1Card2, #Q1Card3, #Q2Card1, #Q2Card2, #Q2Card3, #Q3Card1, #Q3Card2, #Q3Card3, #Q4Card1, #Q4Card2, #Q4Card3, #Q5Card1, #Q5Card2, #Q5Card3, #Q6Card1, #Q6Card2, #Q6Card3, #Q7Card1, #Q7Card2, #Q7Card3, #Q8Card1, #Q8Card2, #Q8Card3, #Q9Card1, #Q9Card2, #Q9Card3, #Q10Card1, #Q10Card2, #Q10Card3").hide();
-    // $("#submitBtn").show();
     $("#timerDiv").show();
     $("#resultContainer").hide();
     startCountdown();
@@ -23,8 +22,6 @@ $(document).ready(function() {
 });
 
 $("input").click(function(){
-    // $("#timerDiv").hide();
-    // $("#resultContainer").show();
     getResult();
     clearInterval(refreshIntervalId);
     qusNo++;
@@ -35,7 +32,7 @@ $("input").click(function(){
 // Counts down and displays the time to the user
 function countdown(){
 
-    // Decrement the timeRemaning, down from 120 seconds
+    // Decrement the timeRemaning, down from 15 seconds
     timeRemaning--;
 
     // Display the timeRemaning to the user in the DOM
@@ -45,11 +42,7 @@ function countdown(){
     /* if timeRemaning <=0 then stop the timer */
     if(timeRemaning <= 0){
         clearInterval(refreshIntervalId);
-        //$("#gameContainer").hide();
-        //$("#doneBtn").hide();
-        //$("#resultContainer").show();
         getResult();
-        // $("#qus1Div, #qus2Div, #qus3Div, #qus4Div, #qus5Div, #qus6Div, #qus7Div, #qus8Div, #qus9Div, #qus10Div, #resultContainer").hide();
         qusNo++;
     }
 }
@@ -89,7 +82,6 @@ function getResult(){
     if(Q1 == undefined){
         console.log("Q1 is =="+Q1);
         unAns++;
-        //qusNo++;
         $("#qus1Div").hide();
         $("#Q1Card3").show();
         setTimeout(
@@ -97,10 +89,8 @@ function getResult(){
             {
                 $("#qus2").show();
                 console.log("passing qus 2 show");
-                //$("#qus1, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
                 $("#Q1Card3").hide();
                 $("#Q2Card1,#Q2Card2,#Q2Card3,#resultContainer").hide();
-                //clearInterval(refreshIntervalId);
                 $("#qus1").hide();
                 timeRemaning= 15;
                 $('#timeRemaning').html(timeRemaning + " Seconds");
@@ -109,17 +99,15 @@ function getResult(){
     }
     else if(Q1 == "Treacle tart"){
         correctAns++;
-        //qusNo++;
+       
         $("#qus1Div").hide();
         $("#Q1Card1").show();
         setTimeout(
             function() 
             {
                 $("#qus2").show();
-                //$("#qus1, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
                 $("#Q1Card1").hide();
                 $("#Q2Card1,#Q2Card2,#Q2Card3,#resultContainer").hide();
-                //clearInterval(refreshIntervalId);
                 $("#qus1").hide();
                 timeRemaning= 15;
                 $('#timeRemaning').html(timeRemaning + " Seconds");
@@ -128,17 +116,15 @@ function getResult(){
     }
     else{
         incorrectAns++;
-        //qusNo++;
+       
         $("#qus1Div").hide();
         $("#Q1Card2").show();
         setTimeout(
             function() 
             {
                 $("#qus2").show();
-                //$("#qus1, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
                 $("#Q1Card2").hide();
                 $("#Q2Card1,#Q2Card2,#Q2Card3,#resultContainer").hide();
-                //clearInterval(refreshIntervalId);
                 $("#qus1").hide();
                 timeRemaning= 15;
                 $('#timeRemaning').html(timeRemaning + " Seconds");
@@ -147,25 +133,17 @@ function getResult(){
     }
     }
 
-    // if(Q1 == undefined || Q1 == "Lemon drops" || Q1 == "Pumpkin juice" || Q1 == "Mrs Weasley's fudge" || Q1 == "Treacle tart" )
-    // {
-    //    ansQus1();
-    // }
-    //ansQus1();
+
  //*********************************************************************************************************************************   
     function ansQus2(){
-    // $("#qusDiv1").hide();
-    //startCountdown();
     if(Q2 == undefined){
         unAns++;
-        //qusNo++;
         $("#qus2Div").hide();
         $("#Q2Card3").show();
         setTimeout(
             function() 
             {
                 $("#qus3").show();
-                //$("#qus1, #qus2, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
                 $("#Q2Card3").hide();
                 $("#Q3Card1,#Q3Card2,#Q3Card3,#resultContainer").hide();
                 $("#qus2").hide();
@@ -176,14 +154,13 @@ function getResult(){
     }
     else if(Q2 == "Filius Flitwick"){
         correctAns++;
-        //qusNo++;
+       
         $("#qus2Div").hide();
         $("#Q2Card1").show();
         setTimeout(
             function() 
             {
                 $("#qus3").show();
-                //$("#qus1, #qus2, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
                 $("#Q2Card1").hide();
                 $("#Q3Card1,#Q3Card2,#Q3Card3,#resultContainer").hide();
                 $("#qus2").hide();
@@ -194,14 +171,13 @@ function getResult(){
     }
     else{
         incorrectAns++;
-        //qusNo++;
+       
         $("#qus2Div").hide();
         $("#Q2Card2").show();
         setTimeout(
             function() 
             {
                 $("#qus3").show();
-                //$("#qus1, #qus2, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
                 $("#Q2Card2").hide();
                 $("#Q3Card1,#Q3Card2,#Q3Card3,#resultContainer").hide();
                 $("#qus2").hide();
@@ -211,23 +187,16 @@ function getResult(){
             }, 3000);
     }
     }
-    // if(Q2 == undefined || Q2 == "Minerva McGonagall" || Q2 == "Severus Snape" || Q2 == "Filius Flitwick" || Q2 == "Horace Slughorn" )
-    // {
-    //    ansQus2();
-    // }
-    //ansQus2();
  //*********************************************************************************************************************************   
     function ansQus3(){
     if(Q3 == undefined){
         unAns++;
-        //qusNo++;
         $("#qus3Div").hide();
         $("#Q3Card3").show();
         setTimeout(
         function() 
         {
             $("#qus4").show();
-            //$("#qus1, #qus2, #qus3, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q3Card3").hide();
             $("#Q4Card1,#Q4Card2,#Q4Card3,#resultContainer").hide();
             $("#qus3").hide();
@@ -238,14 +207,12 @@ function getResult(){
     }
     else if(Q3 == "The dungeons"){
         correctAns++;
-        //qusNo++;
         $("#qus3Div").hide();
         $("#Q3Card1").show();
         setTimeout(
         function() 
         {
             $("#qus4").show();
-           // $("#qus1, #qus2, #qus3, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q3Card1").hide();
             $("#Q4Card1,#Q4Card2,#Q4Card3,#resultContainer").hide();
             $("#qus3").hide();
@@ -256,14 +223,13 @@ function getResult(){
     }
     else{
         incorrectAns++;
-        //qusNo++;
+       
         $("#qus3Div").hide();
         $("#Q3Card2").show();
         setTimeout(
         function() 
         {
             $("#qus4").show();
-            //$("#qus1, #qus2, #qus3, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q3Card2").hide();
             $("#Q4Card1,#Q4Card2,#Q4Card3,#resultContainer").hide();
             $("#qus3").hide();
@@ -273,23 +239,17 @@ function getResult(){
         }, 3000);
     }
     }
-    // if(Q3 == undefined || Q3 == "Next to the kitchens" || Q3 == "In the West Tower" || Q3 == "The dungeons" || Q3 == "Below the Great Hall" )
-    // {
-    //    ansQus3();
-    // }
-    //ansQus3();
+
  //*********************************************************************************************************************************   
     function ansQus4(){
     if(Q4 == undefined){
         unAns++;
-        //qusNo++;
         $("#qus4Div").hide();
         $("#Q4Card3").show();
         setTimeout(
         function() 
         {
             $("#qus5").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q4Card3").hide();
             $("#Q5Card1,#Q5Card2,#Q5Card3,#resultContainer").hide();
             $("#qus4").hide();
@@ -300,14 +260,12 @@ function getResult(){
     }
     else if(Q4 == "Secrets of the Darkest Art"){
         correctAns++;
-        //qusNo++;
         $("#qus4Div").hide();
         $("#Q4Card1").show();
         setTimeout(
         function() 
         {
             $("#qus5").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q4Card1").hide();
             $("#Q5Card1,#Q5Card2,#Q5Card3,#resultContainer").hide();
             $("#qus4").hide();
@@ -318,14 +276,12 @@ function getResult(){
     }
     else{
         incorrectAns++;
-        //qusNo++;
         $("#qus4Div").hide();
         $("#Q4Card2").show();
         setTimeout(
         function() 
         {
             $("#qus5").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q4Card2").hide();
             $("#Q5Card1,#Q5Card2,#Q5Card3,#resultContainer").hide();
             $("#qus4").hide();
@@ -335,24 +291,17 @@ function getResult(){
         }, 3000);
     }
     }
-    // if(Q4 == undefined || Q4 == "Magik Moste Evil" || Q4 == "Secrets of the Darkest Art" || Q4 == "A Guide to Medieval Sorcery" || Q4 == "Moste Potente Potions" )
-    // {
-    //    ansQus4();
-    // }
-    //ansQus4();
-
+   
  //*********************************************************************************************************************************   
     function ansQus5(){
     if(Q5 == undefined){
         unAns++;
-        //qusNo++;
         $("#qus5Div").hide();
         $("#Q5Card3").show();
         setTimeout(
         function() 
         {
             $("#qus6").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q5Card3").hide();
             $("#Q6Card1,#Q6Card2,#Q6Card3,#resultContainer").hide();
             $("#qus5").hide();
@@ -363,14 +312,13 @@ function getResult(){
     }
     else if(Q5 == "The Fat Friar"){
         correctAns++;
-        //qusNo++;
+       
         $("#qus5Div").hide();
         $("#Q5Card1").show();
         setTimeout(
         function() 
         {
             $("#qus6").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q5Card1").hide();
             $("#Q6Card1,#Q6Card2,#Q6Card3,#resultContainer").hide();
             $("#qus5").hide();
@@ -381,14 +329,12 @@ function getResult(){
     }
     else{
         incorrectAns++;
-        //qusNo++;
         $("#qus5Div").hide();
         $("#Q5Card2").show();
         setTimeout(
         function() 
         {
             $("#qus6").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus7, #qus8, #qus9, #qus10").hide();
             $("#Q5Card2").hide();
             $("#Q6Card1,#Q6Card2,#Q6Card3,#resultContainer").hide();
             $("#qus5").hide();
@@ -398,25 +344,17 @@ function getResult(){
         }, 3000);
     }
     }
-    // if(Q5 == undefined || Q5 == "Cuthbert Binns" || Q5 == "Sir Patrick Delaney-Podmore" || Q5 == "The Fat Friar" || Q5 == "The Grey Lady" )
-    // {
-    //    ansQus5();
-    // }
-    //ansQus5();
-
-
+   
  //*********************************************************************************************************************************   
     function ansQus6(){
     if(Q6 == undefined){
         unAns++;
-        //qusNo++;
         $("#qus6Div").hide();
         $("#Q6Card3").show();
         setTimeout(
         function() 
         {
             $("#qus7").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus8, #qus9, #qus10").hide();
             $("#Q6Card3").hide();
             $("#Q7Card1,#Q7Card2,#Q7Card3,#resultContainer").hide();
             $("#qus6").hide();
@@ -427,14 +365,12 @@ function getResult(){
     }
     else if(Q6 == "Thestrals"){
         correctAns++;
-        //qusNo++;
         $("#qus6Div").hide();
         $("#Q6Card1").show();
         setTimeout(
         function() 
         {
             $("#qus7").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus8, #qus9, #qus10").hide();
             $("#Q6Card1").hide();
             $("#Q7Card1,#Q7Card2,#Q7Card3,#resultContainer").hide();
             $("#qus6").hide();
@@ -445,14 +381,12 @@ function getResult(){
     }
     else{
         incorrectAns++;
-        //qusNo++;
         $("#qus6Div").hide();
         $("#Q6Card2").show();
         setTimeout(
         function() 
         {
             $("#qus7").show();
-           // $("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus8, #qus9, #qus10").hide();
             $("#Q6Card2").hide();
             $("#Q7Card1,#Q7Card2,#Q7Card3,#resultContainer").hide();
             $("#qus6").hide();
@@ -462,26 +396,18 @@ function getResult(){
         }, 3000);
     }
     }
-    // if(Q6 == undefined || Q6 == "Hippogriffs" || Q6 == "Thestrals" || Q6 == "Centaurs" || Q6 == "Manticores" )
-    // {
-    //    ansQus6();
-    // }
-   //ansQus6();
-
 
  //*********************************************************************************************************************************   
 
     function ansQus7(){
     if(Q7 == undefined){
         unAns++;
-        //qusNo++;
         $("#qus7Div").hide();
         $("#Q7Card3").show();
         setTimeout(
         function() 
         {
             $("#qus8").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus9, #qus10").hide();
             $("#Q7Card3").hide();
             $("#Q8Card1,#Q8Card2,#Q8Card3,#resultContainer").hide();
             $("#qus7").hide();
@@ -492,14 +418,12 @@ function getResult(){
     }
     else if(Q7 == "The Room of Requirement"){
         correctAns++;
-        //qusNo++;
         $("#qus7Div").hide();
         $("#Q7Card1").show();
         setTimeout(
         function() 
         {
             $("#qus8").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus9, #qus10").hide();
             $("#Q7Card1").hide();
             $("#Q8Card1,#Q8Card2,#Q8Card3,#resultContainer").hide();
             $("#qus7").hide();
@@ -510,14 +434,12 @@ function getResult(){
     }
     else{
         incorrectAns++;
-        //qusNo++;
         $("#qus7Div").hide();
         $("#Q7Card2").show();
         setTimeout(
         function() 
         {
             $("#qus8").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus9, #qus10").hide();
             $("#Q7Card2").hide();
             $("#Q8Card1,#Q8Card2,#Q8Card3,#resultContainer").hide();
             $("#qus7").hide();
@@ -527,24 +449,17 @@ function getResult(){
         }, 3000);
     }
     }
-    // if(Q7 == undefined || Q7 == "The Restricted Section of the Library" || Q7 == "The girls bathroom on the first floor" || Q7 == "The Prefect's Bathroom" || Q7 == "The Room of Requirement" )
-    // {
-    //    ansQus7();
-    // }
-    //ansQus7();
  //*********************************************************************************************************************************   
 
     function ansQus8(){
     if(Q8 == undefined){
         unAns++;
-        //qusNo++;
         $("#qus8Div").hide();
         $("#Q8Card3").show();
         setTimeout(
         function() 
         {
             $("#qus9").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus10").hide();
             $("#Q8Card3").hide();
             $("#Q9Card1,#Q9Card2,#Q9Card3,#resultContainer").hide();
             $("#qus8").hide();
@@ -555,14 +470,12 @@ function getResult(){
     }
     else if(Q8 == "Armando Dippet"){
         correctAns++;
-        //qusNo++;
         $("#qus8Div").hide();
         $("#Q8Card1").show();
         setTimeout(
         function() 
         {
             $("#qus9").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus10").hide();
             $("#Q8Card1").hide();
             $("#Q9Card1,#Q9Card2,#Q9Card3,#resultContainer").hide();
             $("#qus8").hide();
@@ -573,14 +486,12 @@ function getResult(){
     }
     else{
         incorrectAns++;
-        //qusNo++;
         $("#qus8Div").hide();
         $("#Q8Card2").show();
         setTimeout(
         function() 
         {
             $("#qus9").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus10").hide();
             $("#Q8Card2").hide();
             $("#Q9Card1,#Q9Card2,#Q9Card3,#resultContainer").hide();
             $("#qus8").hide();
@@ -591,24 +502,17 @@ function getResult(){
     }
     
     }
-    // if(Q8 == undefined || Q8 == "Armando Dippet" || Q8 == "Albus Dumbledore" || Q8 == "Phineas Nigellus Black" || Q7 == "The Room of Requirement" )
-    // {
-    //    ansQus8();
-    // }
-    //ansQus8();
 
  //*********************************************************************************************************************************   
     function ansQus9(){
     if(Q9 == undefined){
         unAns++;
-        //qusNo++;
         $("#qus9Div").hide();
         $("#Q9Card3").show();
         setTimeout(
         function() 
         {
             $("#qus10").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9").hide();
             $("#Q9Card3").hide();
             $("#Q10Card1,#Q10Card2,#Q10Card3,#resultContainer").hide();
             $("#qus9").hide();
@@ -619,14 +523,12 @@ function getResult(){
     }
     else if(Q9 == "142"){
         correctAns++;
-        //qusNo++;
         $("#qus9Div").hide();
         $("#Q9Card1").show();
         setTimeout(
         function() 
         {
             $("#qus10").show();
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9").hide();
             $("#Q9Card1").hide();
             $("#Q10Card1,#Q10Card2,#Q10Card3,#resultContainer").hide();
             $("#qus9").hide();
@@ -637,14 +539,12 @@ function getResult(){
     }
     else{
         incorrectAns++;
-        //qusNo++;
         $("#qus9Div").hide();
         $("#Q9Card2").show();
         setTimeout(
         function() 
         {
             $("#qus10").show();
-           //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9").hide();
             $("#Q9Card2").hide();
             $("#Q10Card1,#Q10Card2,#Q10Card3,#resultContainer").hide();
             $("#qus9").hide();
@@ -654,80 +554,52 @@ function getResult(){
         }, 3000);
     }
     }
-    // if(Q9 == undefined || Q9 == "142" || Q9 == "143" || Q9 == "163" || Q9 == "152" )
-    // {
-    //    ansQus9();
-    // }
-    //ansQus9();
+   
  //*********************************************************************************************************************************   
     function ansQus10(){
     if(Q10 == undefined){
         unAns++;
-        //qusNo++;
         $("#qus10Div").hide();
         $("#Q10Card3").show();
         setTimeout(
         function() 
         {
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#resultContainer").show();
             $("#Q10Card3").hide();
-            //$("#Q10Card1,#Q10Card2,#Q10Card3").hide();
             $("#qus10").hide();
             stopCountdown();
-            // timeRemaning= 15;
-            // $('#timeRemaning').html(timeRemaning + " Seconds");
-            // startCountdown();
         }, 3000);
     }
     else if(Q10 == "Quirrell, Lockhart, Lupin, Moody, Umbridge, Snape"){
         correctAns++;
-        //qusNo++;
         $("#qus10Div").hide();
         $("#Q10Card1").show();
         setTimeout(
         function() 
         {
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#resultContainer").show();
             $("#Q10Card1").hide();
-            //$("#Q10Card1,#Q10Card2,#Q10Card3").hide();
             $("#qus10").hide();
             stopCountdown();
-            // timeRemaning= 15;
-            // $('#timeRemaning').html(timeRemaning + " Seconds");
-            // startCountdown();
         }, 3000);
     }
     else{
         incorrectAns++;
-        //qusNo++;
         $("#qus10Div").hide();
         $("#Q10Card2").show();
         setTimeout(
         function() 
         {
-            //$("#qus1, #qus2, #qus3, #qus4, #qus5, #qus6, #qus7, #qus8, #qus9, #qus10").hide();
             $("#resultContainer").show();
             $("#Q10Card2").hide();
-            //$("#Q10Card1,#Q10Card2,#Q10Card3").hide();
             $("#qus10").hide();
             stopCountdown();
-            // timeRemaning= 15;
-            // $('#timeRemaning').html(timeRemaning + " Seconds");
-            // startCountdown();
         }, 3000);
     }
     }
-    // if(Q10 == undefined || Q10 == "Quirrell, Lockhart, Lupin, Moody, Umbridge, Snape" || Q10 == "Quirrell, Lockhart, Lupin, Moody, Umbridge, Slughorn" || Q10 == "Quirrell, Lockhart, Lupin, Umbridge, Moody, Snape" || Q10 == "Quirrell, Lockhart, Lupin, Moody, Snape, Carrow" )
-    // {
-    //    ansQus10();
-    // }
-   //ansQus10();
-    
-
+   
 //*********************************************************************************************************************************   
-    //qusNo=qusNo++;
+    //call functionQ1-Q2 according to the current question number displayed 
     if(qusNo === 1)
     {
        ansQus1();
@@ -824,14 +696,17 @@ function getResult(){
     
  //*********************************************************************************************************************************   
     // After answers are validated, display the score results
-    
     $('#correct-ans').html(correctAns);
     $('#incorrect-ans').html(incorrectAns);
     $('#un-ans').html(unAns);
+ //*********************************************************************************************************************************   
     
 }
 
-//Hide result after selecting start Over Button and reset the variables value
+//*********************************************************************************************************************************   
+//Hide result after selecting start Over Button 
+//and reset the variables value
+//then play again
 $("#startOverBtn").click(function(){
     //location.reload();
 
@@ -854,16 +729,12 @@ $("#startOverBtn").click(function(){
     unAns=0;
     qusNo=1;
     refreshIntervalId= null;
+     $('#timeRemaning').html(timeRemaning + " Seconds");
     $("#resultContainer").hide();
-    //$("#welcomeContainer").hide();
-    //$("#qus1").show();
     $("#qus1").css("display", "block");
     $("#qus1Div, #qus2Div , #qus3Div , #qus4Div , #qus5Div , #qus6Div , #qus7Div , #qus8Div , #qus9Div , #qus10Div" ).show();
-
-    //$("#Q1Card1, #Q1Card2, #Q1Card3, #Q2Card1, #Q2Card2, #Q2Card3, #Q3Card1, #Q3Card2, #Q3Card3, #Q4Card1, #Q4Card2, #Q4Card3, #Q5Card1, #Q5Card2, #Q5Card3, #Q6Card1, #Q6Card2, #Q6Card3, #Q7Card1, #Q7Card2, #Q7Card3, #Q8Card1, #Q8Card2, #Q8Card3, #Q9Card1, #Q9Card2, #Q9Card3, #Q10Card1, #Q10Card2, #Q10Card3").hide();
-    // $("#submitBtn").show();
     $("#timerDiv").show();
     startCountdown();
 });
-
+//*********************************************************************************************************************************   
 
